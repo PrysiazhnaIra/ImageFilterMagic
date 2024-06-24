@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniProject</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- picture project -->
+        <div class="block">
+            <h1>Filter Fun 🙂 </h1>
+            <h2>Choose your image and enjoy different filters ⬇️</h2>
+            
+            <canvas id="canva"></canvas>
+              
+             <h2>Load image</h2>
+             <label for="file" class="custom-file-upload">
+              Select a file
+            </label>
+            <input class="load" type="file" multiple="false" accept="image/*" id="file" onchange="loadImage()" style="display:none;">
+              
+              <div class="buttons">
+                
+                <h2>Choose Filter ⬇️</h2>
+                
+            <input type="button" value="Do red" onclick="doRed()" class="btn">
+             
+              <input type="button" value="Do grey scale" onclick="doGreyScale()" class="btn">
+              
+                <input type="button" value="Do rainbow" onclick="doRainbow()" class="btn">
+
+                <input type="button" value="Do random" onclick="applySepia()" class="btn">
+
+                <input type="button" value="Do negative" onclick="applyNegative()" class="btn">
+
+                <input type="button" value="Do solarize" onclick="applySolarize()" class="btn">
+
+                <input type="button" value="Do posterize" onclick="applyPosterize()" class="btn">
+
+                <input type="button" value="Do blur" onclick="applyBlur()" class="btn">
+              
+                <input type="button" value="Reset" onclick="reset()" class="btn">
+              </div>
+              
+            </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./main.js"></script>
+
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    
+</body>
+</html>
