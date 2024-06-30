@@ -1,33 +1,37 @@
 body {
-    background: rgb(37,152,177);
-    background: radial-gradient(circle, rgba(37,152,177,0) 0%, rgba(226,193,162,0.9542410714285714) 100%);
-    }
-    
-    .block {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      margin: 20px;
-    }
-    
-    h1{
-      color: purple;
-    }
-    
-    canvas {
-      width: 70%;
-      border: 2px solid purple;
-      margin: 0 auto;
-      border-radius: 20px;
-    }
-    
-    input {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    
-    .load {
-      background-color:#fae6ff;
+  background: rgb(37, 152, 177);
+  background: radial-gradient(
+    circle,
+    rgba(37, 152, 177, 0) 0%,
+    rgba(226, 193, 162, 0.9542410714285714) 100%
+  );
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  color: purple;
+}
+
+canvas {
+  width: 50%;
+  border: 2px solid purple;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.load {
+  background-color: #fae6ff;
   border: none;
   color: #14001a;
   padding: 15px 32px;
@@ -38,27 +42,27 @@ body {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
-    }
-    .custom-file-upload {
-      width: 500px;
-      padding: 6px 12px;
-      cursor: pointer;
-      background-color: #fae6ff;
-      border: 2px solid purple;
-      color: #14001a;
-      border-radius: 20px;
-      margin: 0 auto;
-  }
-    
-    .btn {
-      width: 150px;
-      height: 50px;
-      border-radius: 20px;
-      border: 2px solid purple;
-      margin: 5px;
-      background-color: #fae6ff;
-    }
+}
+.custom-file-upload {
+  width: 160px;
+  padding: 15px 32px;
+  cursor: pointer;
+  background-color: #fae6ff;
+  border: 2px solid purple;
+  color: #14001a;
+  border-radius: 20px;
+  margin: 0 auto;
+}
 
-  .buttons {
-      margin-top: 20px;
-  }
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid purple;
+  margin: 5px;
+  background-color: #fae6ff;
+}
+
+.buttons {
+  margin-top: 20px;
+}

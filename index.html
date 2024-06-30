@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MiniProject</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,56 +19,90 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-    <header>
-
-    </header>
+  </head>
+  <body>
+    <header></header>
     <main>
-        <!-- picture project -->
-        <div class="block">
-            <h1>Filter Fun 🙂 </h1>
-            <h2>Choose your image and enjoy different filters ⬇️</h2>
-            
-            <canvas id="canva"></canvas>
-              
-             <h2>Load image</h2>
-             <label for="file" class="custom-file-upload">
-              Select a file
-            </label>
-            <input class="load" type="file" multiple="false" accept="image/*" id="file" onchange="loadImage()" style="display:none;">
-              
-              <div class="buttons">
-                
-                <h2>Choose Filter ⬇️</h2>
-                
-            <input type="button" value="Do red" onclick="doRed()" class="btn">
-             
-              <input type="button" value="Do grey scale" onclick="doGreyScale()" class="btn">
-              
-                <input type="button" value="Do rainbow" onclick="doRainbow()" class="btn">
+      <!-- picture project -->
+      <div class="block">
+        <h1>Filter Fun 🙂</h1>
+        <h2>Choose your image and enjoy different filters ⬇️</h2>
 
-                <input type="button" value="Do random" onclick="applySepia()" class="btn">
+        <canvas id="canva"></canvas>
 
-                <input type="button" value="Do negative" onclick="applyNegative()" class="btn">
+        <h2>Load image</h2>
+        <label for="file" class="custom-file-upload"> Select a file </label>
+        <input
+          class="load"
+          type="file"
+          multiple="false"
+          accept="image/*"
+          id="file"
+          onchange="loadImage()"
+          style="display: none"
+        />
 
-                <input type="button" value="Do solarize" onclick="applySolarize()" class="btn">
+        <div class="buttons">
+          <h2>Choose Filter ⬇️</h2>
 
-                <input type="button" value="Do posterize" onclick="applyPosterize()" class="btn">
+          <input type="button" value="Do red" onclick="doRed()" class="btn" />
 
-                <input type="button" value="Do blur" onclick="applyBlur()" class="btn">
-              
-                <input type="button" value="Reset" onclick="reset()" class="btn">
-              </div>
-              
-            </div>
+          <input
+            type="button"
+            value="Do grey scale"
+            onclick="doGreyScale()"
+            class="btn"
+          />
+
+          <input
+            type="button"
+            value="Do rainbow"
+            onclick="doRainbow()"
+            class="btn"
+          />
+
+          <input
+            type="button"
+            value="Do random"
+            onclick="applySepia()"
+            class="btn"
+          />
+
+          <input
+            type="button"
+            value="Do negative"
+            onclick="applyNegative()"
+            class="btn"
+          />
+
+          <input
+            type="button"
+            value="Do solarize"
+            onclick="applySolarize()"
+            class="btn"
+          />
+
+          <input
+            type="button"
+            value="Do posterize"
+            onclick="applyPosterize()"
+            class="btn"
+          />
+
+          <input
+            type="button"
+            value="Do blur"
+            onclick="applyBlur()"
+            class="btn"
+          />
+
+          <input type="button" value="Reset" onclick="reset()" class="btn" />
+        </div>
+      </div>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="./main.js"></script>
 
     <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
-    
-</body>
+  </body>
 </html>
